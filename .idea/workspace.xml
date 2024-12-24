@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="소스 루트 변경">
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/DataInputExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/DataOutputExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileIn.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileOut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam4.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jiyuuuuun&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiyuuuuun/like_lion_practice.git&quot;,
+    &quot;accountId&quot;: &quot;b65cecd1-a5c1-4e3a-a435-e1b51688f644&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2qdm4C4yWVnYFXQgdkeldq8gXGd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "애플리케이션.DataInputExam.executor": "Run",
+    "애플리케이션.DataOutputExam.executor": "Run",
+    "애플리케이션.FileExam.executor": "Run",
+    "애플리케이션.IOExam.executor": "Run",
+    "애플리케이션.IOExam2.executor": "Run",
+    "애플리케이션.IOExam3.executor": "Run",
+    "애플리케이션.IOExam4.executor": "Run"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="" />
+      <created>1735000637982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735000637982</updated>
+    </task>
+    <task id="LOCAL-00001" summary="소스 루트 변경">
+      <option name="closed" value="true" />
+      <created>1735001435364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735001435364</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="소스 루트 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="소스 루트 변경" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/happyjava/src/day12/IOExam.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
