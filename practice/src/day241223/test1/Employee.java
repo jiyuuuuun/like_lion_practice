@@ -1,4 +1,4 @@
-package day241223.test1;
+package practice.src.day241223.test1;
 
 import java.util.Objects;
 

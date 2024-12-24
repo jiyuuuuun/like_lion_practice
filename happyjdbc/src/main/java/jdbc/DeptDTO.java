@@ -1,4 +1,4 @@
-package jdbc;
+package happyjdbc.src.main.java.jdbc;
 
 public class DeptDTO {
     private int deptno;

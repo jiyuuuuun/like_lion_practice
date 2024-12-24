@@ -1,4 +1,4 @@
-package day04;
+package happyjava.src.day04;
 
 public class UnlimitiedArgumentsExam {
     public static void main(String[] args) {

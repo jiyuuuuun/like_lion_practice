@@ -1,4 +1,4 @@
-package day10;
+package happyjava.src.day10;
 
 public class ExceptionExam2 {
 

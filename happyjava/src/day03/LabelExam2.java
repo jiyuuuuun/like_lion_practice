@@ -1,4 +1,4 @@
-package day03;
+package happyjava.src.day03;
 
 public class LabelExam2 {
     public static void main(String[] args){

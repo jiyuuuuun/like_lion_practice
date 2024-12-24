@@ -1,4 +1,4 @@
-package day11;
+package happyjava.src.day11;
 
 public class Book {
     String title;

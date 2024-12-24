@@ -1,4 +1,4 @@
-package day02;
+package happyjava.src.day02;
 
 public class OpExam {
     public static void main(String[] args) {

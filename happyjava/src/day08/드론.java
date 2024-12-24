@@ -1,4 +1,4 @@
-package day08;
+package happyjava.src.day08;
 
 public class 드론 implements Flyable{
 

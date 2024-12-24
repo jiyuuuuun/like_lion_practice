@@ -1,4 +1,4 @@
-package jdbc;
+package happyjdbc.src.main.java.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

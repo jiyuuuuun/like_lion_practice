@@ -1,4 +1,4 @@
-package day04;
+package happyjava.src.day04;
 
 public class AmbiguityExample {
     public static void print(int number) {

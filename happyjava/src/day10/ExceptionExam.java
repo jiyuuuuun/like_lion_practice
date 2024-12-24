@@ -1,4 +1,4 @@
-package day10;
+package happyjava.src.day10;
 
 //예외 처리하는 두가지 버전
 //1. try-catch-finally

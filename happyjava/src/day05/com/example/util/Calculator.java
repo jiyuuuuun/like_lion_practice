@@ -1,4 +1,4 @@
-package day05.com.example.util;
+package happyjava.src.day05.com.example.util;
 
 public class Calculator {
     public void plus(int i,int j){

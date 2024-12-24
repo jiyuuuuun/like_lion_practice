@@ -1,6 +1,6 @@
-package jdbc;
+package happyjdbc.src.main.java;
 
-import jdbc.DBUtil;
+import happyjdbc.src.main.java.jdbc.DBUtil;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

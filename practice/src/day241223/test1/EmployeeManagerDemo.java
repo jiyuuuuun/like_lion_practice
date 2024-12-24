@@ -1,4 +1,4 @@
-package day241223.test1;
+package practice.src.day241223.test1;
 
 public class EmployeeManagerDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day05;
+package happyjava.src.day05;
 
 import java.util.Objects;
 

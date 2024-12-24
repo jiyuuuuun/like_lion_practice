@@ -1,4 +1,4 @@
-package day241223.test2;
+package practice.src.day241223.test2;
 
 import java.util.HashMap;
 import java.util.Scanner;

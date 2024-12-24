@@ -1,4 +1,4 @@
-package day08;
+package happyjava.src.day08;
 
 public class FlyableTest {
     public static void main(String[] args) {

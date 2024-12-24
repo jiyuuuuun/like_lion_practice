@@ -1,4 +1,4 @@
-package day02;
+package happyjava.src.day02;
 
 public class WhileExam2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day01;
+package happyjava.src.day01;
 /**
  * 자바 주석 테스트 하는 클래스
  *
