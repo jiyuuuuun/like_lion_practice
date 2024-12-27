@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="소스 루트 변경">
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day13/ExampleThread.java" afterDir="false" />
+    <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="day13">
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/LSPExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/LSPExam2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/OCPExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/SRPExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day13/ExampleThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DefaultCs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DiscountMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DiscountProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Junior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/OCPExam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/SRPExam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/practice/person.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +85,10 @@
     "애플리케이션.IOExam.executor": "Run",
     "애플리케이션.IOExam2.executor": "Run",
     "애플리케이션.IOExam3.executor": "Run",
-    "애플리케이션.IOExam4.executor": "Run"
+    "애플리케이션.IOExam4.executor": "Run",
+    "애플리케이션.LSPExam2.executor": "Run",
+    "애플리케이션.OCPExam.executor": "Run",
+    "애플리케이션.SRPExam.executor": "Run"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735001435364</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day13">
+      <option name="closed" value="true" />
+      <created>1735265798600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735265798600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="소스 루트 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="소스 루트 변경" />
+    <MESSAGE value="day13" />
+    <option name="LAST_COMMIT_MESSAGE" value="day13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
