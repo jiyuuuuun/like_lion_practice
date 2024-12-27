@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="소스 루트 변경">
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/DataInputExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/DataOutputExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileIn.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/FileOut.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day12/IOExam4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day13/ExampleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +63,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "애플리케이션.DataInputExam.executor": "Run",
     "애플리케이션.DataOutputExam.executor": "Run",
+    "애플리케이션.ExampleThread.executor": "Run",
     "애플리케이션.FileExam.executor": "Run",
     "애플리케이션.IOExam.executor": "Run",
     "애플리케이션.IOExam2.executor": "Run",
