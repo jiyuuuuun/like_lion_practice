@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="day13">
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/LSPExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/LSPExam2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/OCPExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/SRPExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happyjava/src/day14/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day13/ExampleThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DefaultCs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DiscountMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/DiscountProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Junior.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/OCPExam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/SRPExam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/practice/person.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/person.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day15/AdapterDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day15/AdapterExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day15/DecoratorDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/ElectricCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/ElectricCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/LSPExam2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice/happyjava/src/day14/LSPExam2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +67,11 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
+    "애플리케이션.AdapterDemo.executor": "Run",
+    "애플리케이션.AdapterExam.executor": "Run",
     "애플리케이션.DataInputExam.executor": "Run",
     "애플리케이션.DataOutputExam.executor": "Run",
+    "애플리케이션.DecoratorDemo.executor": "Run",
     "애플리케이션.ExampleThread.executor": "Run",
     "애플리케이션.FileExam.executor": "Run",
     "애플리케이션.IOExam.executor": "Run",
