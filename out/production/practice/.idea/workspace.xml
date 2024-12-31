@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8404fa1c-0187-4c07-864a-5a89f3864744" name="변경" comment="day13">
+      <change afterPath="$PROJECT_DIR$/happyjava/src/day16/FacadeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,29 +51,33 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;애플리케이션.DataInputExam.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.DataOutputExam.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ExampleThread.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.FileExam.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.IOExam.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.IOExam2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.IOExam3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.IOExam4.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.LSPExam2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.OCPExam.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.SRPExam.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "애플리케이션.AdapterDemo.executor": "Run",
+    "애플리케이션.AdapterExam.executor": "Run",
+    "애플리케이션.DataInputExam.executor": "Run",
+    "애플리케이션.DataOutputExam.executor": "Run",
+    "애플리케이션.DecoratorDemo.executor": "Run",
+    "애플리케이션.ExampleThread.executor": "Run",
+    "애플리케이션.FacadeDemo.executor": "Run",
+    "애플리케이션.FileExam.executor": "Run",
+    "애플리케이션.IOExam.executor": "Run",
+    "애플리케이션.IOExam2.executor": "Run",
+    "애플리케이션.IOExam3.executor": "Run",
+    "애플리케이션.IOExam4.executor": "Run",
+    "애플리케이션.LSPExam2.executor": "Run",
+    "애플리케이션.OCPExam.executor": "Run",
+    "애플리케이션.SRPExam.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
