@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event8</title>
+</head>
+
+<body>
+    <form action="06.html" id="myForm">
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" /><br />
+        <label for="password">비밀번호</label>
+        <input type="text" name="password" id="password" /><br />
+        <label for="checkPassword">비밀번호 확인</label>
+        <input type="text" name="checkPassword" id="checkPassword" /><br />
+        <input type="submit" value="등록" />
+    </form>
+
+    <script>
+        const submit = document.querySelectorAll('input');
+        const myform = document.getElementById('myForm');
+        const name = document.getElementById('name');
+        const password = document.getElementById('password');
+        const checkPassword = document.getElementById('checkPassword');
+
+        // submit[3].addEventListener('click', () => {
+        //     submit[0].value || alert("이름을 입력하세요");
+        //     if (submit[1].value != submit[2].value) {
+        //         alert("비밀번호가 같지 않습니다")
+        //     }
+        // }
+        // );
+
+        myform.addEventListener('submit', (e) => {
+            // e.preventDefault(); 맨 위에다 위치 해놓고 if문을 다 통과했을 경우 form.submit(); 처리 
+            //이름입력확인
+            if (name.value.trim() === "") { //trim() 공백만 있을 경우도 유효하지 않도록 처리
+                alert("이름을 입력하세요.");
+                name_input.focus(); //원하는 요소에 커서를 위치
+                e.preventDefault(); //preventDefault() 메소드를 이용하면 이벤트 객체가 가지고 있는 기본 이벤트를 막아줌
+                return;
+            }
+            if (password.value.trim() === "") {
+                alert("비밀번호를 입력하세요. 입력하세요.");
+                password_input.focus();
+                e.preventDefault();
+                return;
+            }
+
+            if (checkPassword.value.trim() === "") {
+                alert("비밀번호 확인을 입력하세요. 입력하세요.");
+                checkPassword_input.focus();
+                e.preventDefault();
+                return;
+            }
+
+            if (password.value != checkPassword.value) {
+                alert("비밀번호가 같지 않습니다");
+                e.preventDefault();
+            }
+            // form.submit();
+        });
+    </script>
+</body>
+
+</html>

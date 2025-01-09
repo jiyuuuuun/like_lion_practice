@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event4</title>
+</head>
+
+<body>
+    <script>
+        // 화면이 클릭될 때마다 배경색이 랜덤하게 바뀌게 하고 싶어요.
+        // 힌트 document.body.style.backgroundColor = rgb(x, x, x)
+        document.addEventListener("click", () => {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        });
+    </script>
+</body>
+
+</html>

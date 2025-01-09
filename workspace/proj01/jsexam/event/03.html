@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event3</title>
+</head>
+
+<body>
+    <button id="btn1">클릭</button>
+    <button id="btn2">클릭 2</button>
+    <div></div>
+
+    <script>
+        function changeColor() {
+            const color = prompt();
+            document.body.style.backgroundColor = color;
+        }
+        function print() {
+            const msg = prompt("표시할 메시지를 입력하세요:");
+            const divBox = document.querySelector('div');
+            divBox.innerHTML = `<h1>${msg}</h1>`; // 템플릿 리터럴 사용 
+        }
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', changeColor);
+
+        const btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', print);
+    </script>
+</body>
+
+</html>

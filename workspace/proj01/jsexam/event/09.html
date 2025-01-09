@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<ul id="todoList">
+    <li>할일1</li>
+    <li>할일2</li>
+    <li>할일3</li>
+    <li>할일4</li>
+    <li>할일5</li>
+</ul>
+
+<label for="todo">할일을 입력하세요.</label>
+<input type="text" name="todo" id="todo"> <button>할일 입력</button>
+
+<script>
+    //1. input에 값을 입력하고 버튼을 누르면 할일5 아래쪽에 입력된 값이 출력되게 해주세요.
+    const todo = document.getElementById('todo');
+    const btn = document.querySelector('button');
+    const todoList = document.getElementById('todoList');
+
+    btn.addEventListener('click', () => {
+        const todomsg = todo.value;
+        todoList.insertAdjacentHTML('beforeend', `<li>${todomsg}</li>`); // 마지막에 항목 추가
+
+        todo.value = '';  // 입력 박스를 초기화 (빈 문자열로 설정)
+    });
+    //2. 각 할일 (li) 를 클릭하면 li 에 들어있는 text (ex)할일1) alert()에 출력되게 만들어주세요.
+    //이벤트 전파 
+    todoList.addEventListener('click', (event) => {
+        if (event.target.tagName === 'LI') {  // 클릭한 요소가 <li>일 경우
+            alert(event.target.textContent);
+        }
+    });
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+    <button id="btn1">클릭</button>
+    <button id="btn2">클릭2</button>
+
+    <script>
+        const btn = document.querySelector("#btn1");
+        console.log(btn);
+        const hi = () => {
+            alert("Hello");
+        }
+        btn.addEventListener('click', hi);
+
+        const btn2 = document.querySelector("#btn2");
+        btn2.addEventListener('click', () => alert(new Date().toLocaleString('ko-KR')));
+
+    </script>
+</body>
+
+</html>

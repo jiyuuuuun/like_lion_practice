@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button-a">ButtonA</button>
+    <button id="button-b">ButtonB</button>
+
+    <h1>Button A - <span id="counter-a">0</span></h1>
+    <h1>Button B - <span id="counter-b">0</span></h1>
+
+    <script>
+        const btnA = document.getElementById("button-a");
+        const btnB = document.getElementById("button-b");
+
+        const cntA = document.getElementById("counter-a");
+        const cntB = document.getElementById("counter-b");
+
+        const incrementFunc = (e) => {
+            //console.log(this.id);// fuction()으로 정의했을 떄는 이렇게도 가능 
+            console.log(e.target.id); //이벤트를 발생시킨 타켓의 아이디
+            if (e.target.id == "button-a") {
+                cntA.innerHTML = Number(cntA.innerHTML) + 1;
+            } else {
+                cntB.innerHTML = Number(cntB.innerHTML) + 1;
+            }
+        };
+
+        btnA.addEventListener('click', incrementFunc);
+        btnB.addEventListener('click', incrementFunc);
+
+
+        // btnA.addEventListener('click', () => {
+        //     const num = parseInt(cntA.innerHTML, 10);
+        //     cntA.innerHTML = `${num + 1}`;
+
+        // });
+        // btnB.addEventListener('click', () => {
+        //     const num = parseInt(cntB.innerHTML, 10);
+        //     cntB.innerHTML = `${num + 1}`;
+
+
+        // });
+    </script>
+</body>
+
+</html>
