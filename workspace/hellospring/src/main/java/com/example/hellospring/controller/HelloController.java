@@ -10,4 +10,11 @@ public class HelloController {
     public String hi(){
         return "hello Spring";
     }
+
+    @GetMapping("/")
+    public String hi_second(){
+        return "hi";
+    }
+
+
 }
