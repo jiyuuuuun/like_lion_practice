@@ -1,8 +1,6 @@
 package com.example.iocexam.domain;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class User {
     private String name;
     private String email;
