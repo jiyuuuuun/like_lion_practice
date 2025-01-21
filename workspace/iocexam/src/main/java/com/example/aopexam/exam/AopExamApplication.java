@@ -16,7 +16,7 @@ public class AopExamApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        simpleService.doSomething();
+        System.out.println(simpleService.doSomething());
         simpleService.hello();
         simpleService.setName("jiyun");
 
