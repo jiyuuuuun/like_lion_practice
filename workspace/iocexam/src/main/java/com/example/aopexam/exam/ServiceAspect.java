@@ -1,10 +1,7 @@
 package com.example.aopexam.exam;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -23,5 +20,10 @@ public class ServiceAspect {
     public void after(JoinPoint joinPoint) {
         System.out.println("after Method:::::::::::::::::::::::"+joinPoint.getSignature().getName());
     }
+
+    @AfterReturning(pointcut = "pointcut()",returning = "result")
+    public void afterReturning(JoinPoint joinPoint, Object result) {
+        System.out.println("afterReturning :::::::::::::::::::::::::::"+joinPoint.getSignature().getName()+", return:"+result);
+    }//@After 보다 먼저 실행
 
 }
