@@ -14,6 +14,9 @@ public class SimpleService {
 
     public void hello(){
         System.out.println("SimpleService hello");
+        if(1==1){
+            throw new RuntimeException("SimpleService hello");
+        }
     }
 
     public void setName(String name){

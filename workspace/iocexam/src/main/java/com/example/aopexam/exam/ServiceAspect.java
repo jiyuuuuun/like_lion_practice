@@ -26,4 +26,10 @@ public class ServiceAspect {
         System.out.println("afterReturning :::::::::::::::::::::::::::"+joinPoint.getSignature().getName()+", return:"+result);
     }//@After 보다 먼저 실행
 
+    @AfterThrowing(pointcut = "pointcut()",throwing = "ex")
+    public void afterThrowing(JoinPoint joinPoint, Exception ex) {
+        System.out.println("afterThrowing::::::::::"+joinPoint.getSignature().getName());
+        System.out.println("exception value"+ex.getMessage());
+    }
+
 }
