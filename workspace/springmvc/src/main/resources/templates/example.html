@@ -17,5 +17,12 @@
 <p th:text="#{welcome.message_ko}"></p> <!--언어에 따라서 보이는 글자가 다르게 설정-->
 <!--링크 표현식-->
 <a th:href="@{/home}">home</a>
+<!--조건에 대해서-->
+<div th:if="${isAdmin}">
+    <p th:text="${name}+'은 관리자 입니다'"></p>
+</div>
+<div th:unless="${isAdmin}">
+    <p th:text="${name}+'은 관리자가 아닙니다'"></p>
+</div>
 </body>
 </html>
