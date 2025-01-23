@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+<h1 th:text="${welcome}">Welcome to our website!</h1>
+<ul>
+    <li th:each="item : ${items}" th:text="${item.name}">Item Name</li>
+    item.name= item.getName() 메서드를 찾아서 넣음,  Getter 메서드가 있어야함
+</ul>
+<footer th:include="common/footer :: footer">Footer content</footer>
+
+</body>
+
+</html>

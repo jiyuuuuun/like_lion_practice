@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <title>product</title>
+</head>
+<body>
+<header th:include="common/footer :: header"></header>
+    <li th:each="product:${products}">
+        <span th:text="'🔢제품코드: '+${product.id}+'   🖥️이름: '+${product.name}+'   💲가격: '+${product.price}"></span>
+    </li>
+</ul>
+<footer th:include="common/footer :: footer"></footer>
+
+</body>
+</html>
