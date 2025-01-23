@@ -3,7 +3,3 @@ spring:
     name: springmvc
   thymeleaf:
     cache: false
-  messages:
-    basename: messages //?? ?? ?? ??
-    encoding: UTF-8
-    cache-duration: 0
