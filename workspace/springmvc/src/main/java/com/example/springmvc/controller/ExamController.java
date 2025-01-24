@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.*;
+import java.util.Arrays;
+import java.util.List;
 
 @Controller
 @RequestMapping("/exam")
@@ -40,5 +42,13 @@ public class ExamController {
         }
 //        return "result";  //성공 시 결과 페이지로 포워딩
         return "redirect:/exam/datetime";
+    }
+
+    @GetMapping("/list")
+    public String showList(Model model){
+        List<String> items = Arrays.asList("Item 1", "Item 2", "Item 3", "Item 4", "Item 5",
+                "Item 6", "Item 7", "Item 8", "Item 9", "Item 10");
+        model.addAttribute("items", items);
+        return "list";
     }
 }
