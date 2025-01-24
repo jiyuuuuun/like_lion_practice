@@ -36,9 +36,9 @@ public class ExamController {
     @PostMapping("/submitForm")
     public String submitForm(@Valid @ModelAttribute("userForm") UserForm userForm, BindingResult result){
         if(result.hasErrors()){
-            return "form";  //유효성 검사 실패했을 때 다시 폼뷰초 리턴
+            return "form";  //유효성 검사 실패했을 때 다시 폼뷰로 리턴
         }
-
-        return "result";  //성공 시 결과 페이지로 리다이렉트
+//        return "result";  //성공 시 결과 페이지로 포워딩
+        return "redirect:/exam/datetime";
     }
 }
