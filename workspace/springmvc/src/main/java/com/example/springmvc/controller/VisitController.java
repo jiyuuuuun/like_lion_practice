@@ -28,6 +28,7 @@ public class VisitController {
         Cookie cookie = new Cookie(cookieName, cookieValue);
         cookie.setPath("/");
         cookie.setMaxAge(7 * 24 * 60 * 60);  //7일 유지
+        // cookie.setMaxAge(-1);  //-1 브라우저가 유지되는 동안
         response.addCookie(cookie);  //응답에 쿠키 추가
         //쿠키가 저장되면 /cookieView로 리다이렉트되도록 만들어 주세요.
         return "redirect:/cookieView";
