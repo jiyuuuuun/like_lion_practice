@@ -3,3 +3,8 @@ spring:
     name: springmvc
   thymeleaf:
     cache: false
+
+server:
+  error:
+    whitelabel:
+      enabled: false #서버가 만드는 에러페이지를 비활성화
