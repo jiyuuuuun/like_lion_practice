@@ -1,6 +1,5 @@
 package practice.src.day250205;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,8 +8,8 @@ import java.util.List;
 public class LambdaTransformList {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-        List<Integer> squaredNumbers = new ArrayList<>();
-        // 람다식을 사용하여 각 요소를 변환
-        System.out.println("제곱된 숫자 리스트: " + squaredNumbers);
+        numbers.stream().map(x -> x * x).forEach(System.out::println);
+
+
     }
 }

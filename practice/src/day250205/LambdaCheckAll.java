@@ -9,5 +9,7 @@ public class LambdaCheckAll {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(2, 4, 6, 8, 10);
         // 람다식을 사용하여 모든 요소 검사
+        boolean allMatchStream=numbers.stream().allMatch(number -> number % 2 == 0);
+        System.out.println(allMatchStream);
     }
 }
