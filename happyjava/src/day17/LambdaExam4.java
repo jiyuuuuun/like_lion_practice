@@ -31,6 +31,7 @@ public class LambdaExam4 {
         //입력없이 값을 반환
         Supplier<Double> randomDouble = () -> Math.random();
         Supplier<Double> randomDouble1 = Math::random;
+
         System.out.println(randomDouble.get());
         System.out.println(randomDouble1.get());
 
@@ -42,13 +43,13 @@ public class LambdaExam4 {
         BiFunction<Integer, Integer, Integer> biFunction = (x, y) -> x + y;
         System.out.println(biFunction.apply(1, 2));
 
-        //Cunsumer의 andThen 메서드
-        Consumer<String> conA = s -> System.out.println(s+"aaaa");
-        Consumer<String> conB = s -> System.out.println(s+"bbbb");
-        conA.accept("Hello");
-        conB.accept("HelloWorld");
-
+        //Consumer 의 andThen 메서드
+        Consumer<String> conA = s -> System.out.println(s + "aaaa");
+        Consumer<String> conB = s -> System.out.println(s + "bbbb");
+        conA.accept("jiyun");
+        conB.accept("jiyun");
         Consumer<String> conAB = conA.andThen(conB);
-        conAB.accept("Hello");
+        conAB.accept("hello");
+
     }
 }
