@@ -4,6 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 
 @SpringBootApplication
 public class MainApplication {
@@ -22,6 +24,12 @@ public class MainApplication {
             //Spring data JDBC -- 위에서 나열한 프레임워크를 표준화 시켜주는  프레임워크
             userRepository.save(new User("jiyun@gmail.com", "jiyun"));
             userRepository.findAll().forEach(System.out::println);
+
+            PageRequest pageRequest = PageRequest.of(0, 3);
+
+            System.out.println("=======================");
+            Page<User> page= userRepository.findAllUsersWithpagination(pageRequest);
+            page.forEach(System.out::println);
 
         };
     }
