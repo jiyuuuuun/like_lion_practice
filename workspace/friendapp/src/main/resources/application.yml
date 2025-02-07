@@ -6,5 +6,3 @@ spring:
     username: chill
     password: chill
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-
