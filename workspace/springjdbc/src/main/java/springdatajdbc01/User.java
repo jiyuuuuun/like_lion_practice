@@ -13,15 +13,15 @@ import org.springframework.data.relational.core.mapping.Table;
 @Table("users")
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor //매개변수 없는 생성자
+@AllArgsConstructor //모든 매개변수가 들어있는 생성자
 public class User {
     @Id
     private Long id;
     private String name;
     private String email;
 
-    public User(String email,String name) {
+    public User(String name,String email) {
         this.email = email;
         this.name = name;
     }
