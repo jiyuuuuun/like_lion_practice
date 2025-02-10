@@ -3,6 +3,8 @@ package com.example.friendapp.controller;
 import com.example.friendapp.domain.Friend;
 import com.example.friendapp.service.FriendService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -13,12 +15,21 @@ import org.springframework.web.bind.annotation.*;
 public class FriendController {
     private final FriendService friendService;
 
+//    @GetMapping("/list")
+//    public String list(Model model) {
+//        model.addAttribute("friends", friendService.findAllFriend());
+//
+//        return "friends/list";
+//    };
     @GetMapping("/list")
-    public String list(Model model) {
-        model.addAttribute("friends", friendService.findAllFriend());
-
+    public String list(Model model,
+                   @RequestParam(name = "page", required = false, defaultValue = "1") int page,
+                   @RequestParam(name = "size", required = false, defaultValue = "5") int size){
+        Pageable pageable = PageRequest.of(page - 1, size);
+        model.addAttribute("friends", friendService.findAllFriends(pageable));
+        model.addAttribute("currentPage", page);
         return "friends/list";
-    };
+}
 
     @GetMapping("/add")
     public String add(Model model) {
