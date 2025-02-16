@@ -14,7 +14,7 @@ public class UserMain {
         dao.createUser(user);
 
         //findUser
-        User user1=dao.findUserById(user.getId());
+        User user1=dao.findUser(user.getId());
         //System.out.println(user1);  코드들은 실제 동작할 때 다 빠져야함 -> 어플리케이션의 성능을 떨어뜨림
         log.info("find user:{}",user1); //로그를 사용하면 이 코드를 뺄 때 편리함(로그 레벨)
 
@@ -24,7 +24,7 @@ public class UserMain {
         log.info("update user:{}",user);
 
         //deleteUser
-        User user2=dao.findUserById(user.getId());
+        User user2=dao.findUser(user.getId());
         dao.deleteUser(user2);
         log.info("delete user:{}",user2);
 

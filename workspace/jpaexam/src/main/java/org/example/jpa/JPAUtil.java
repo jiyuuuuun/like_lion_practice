@@ -1,7 +1,9 @@
 package org.example.jpa;
+
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import lombok.extern.slf4j.Slf4j;
+
 @Slf4j
 public class JPAUtil {
     private static final EntityManagerFactory emfInstance =
