@@ -24,22 +24,28 @@ public class VehicleMain {
                 log.info(((Car) vehicle).getSeatCount()+"");
             }if(vehicle instanceof Truck){
                 log.info(vehicle.getManufacturer());
-                log.info(((Truck) vehicle).getPassengerCapacity()+"");
+                log.info(((Truck) vehicle).getPayloadCapacity()+"");
             }
 
             log.info("Vehicle id:{}",vehicle.getId());
             log.info("{}", ((Car) vehicle).getManufacturer());
 
             //jpql
-            List<Vehicle> vehicles=em.createQuery("select v from Vehicle v", Vehicle.class).getResultList();
-            for (Vehicle v : vehicles) {
-                if(v instanceof Car) {
-                    Car car=(Car)v;
-                    log.info("Car SeatCount:{}",car.getSeatCount());
-                }else{
-                    Truck truck=(Truck)v;
-                    log.info("Truck Manufacturer:{}",truck.getManufacturer());
+            List<Vehicle> vehicles = em.createQuery("select v from Vehicle v",Vehicle.class).getResultList();
+            for(Vehicle vehicle1: vehicles){
+                if(vehicle1 instanceof Car){
+                    Car car = (Car)vehicle1;
+                    log.info(car.getManufacturer() +":::"+car.getSeatCount());
+                }else {
+                    Truck truck = (Truck) vehicle1;
+                    log.info(truck.getManufacturer() +":::"+truck.getPayloadCapacity());
+                    log.info(truck.getPayloadCapacity()+"");
                 }
+            }
+            List<Object[]> results = em.createQuery("SELECT v.id, v.manufacturer, TYPE(v) FROM Vehicle v")
+                    .getResultList();
+            for (Object[] result : results) {
+                System.out.println("ID: " + result[0] + ", Manufacturer: " + result[1] + ", Type: " + result[2]);
             }
         }finally {
             em.close();

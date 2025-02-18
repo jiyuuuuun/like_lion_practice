@@ -9,5 +9,5 @@ import lombok.Setter;
 @DiscriminatorValue("TRUCK")
 @Getter@Setter
 public class Truck extends Vehicle {
-    private double passengerCapacity;
+    private double payloadCapacity;
 }

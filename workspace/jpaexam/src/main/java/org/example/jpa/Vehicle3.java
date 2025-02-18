@@ -15,11 +15,11 @@ public class Vehicle3 {
 }
 @Entity
 @Getter@Setter
-class Car3 extends Vehicle2 {
+class Car3 extends Vehicle3 {
     private int seatCount;
 }
 @Entity
 @Getter@Setter
-class Truck3 extends Vehicle2 {
+class Truck3 extends Vehicle3 {
     private double payloadCapacity;
 }
