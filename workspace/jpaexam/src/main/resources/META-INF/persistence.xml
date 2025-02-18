@@ -15,8 +15,8 @@
         <!--        <class>org.example.jpa.Project</class>-->
 <!--        <class>org.example.jpa.Person</class>-->
 <!--        <class>org.example.jpa.Passport</class>-->
-        <class>org.example.jpa.Car</class>
-        <class>org.example.jpa.Truck</class>
+        <class>org.example.jpa.Car2</class>
+        <class>org.example.jpa.Truck2</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>
