@@ -3,10 +3,10 @@ spring:
     name: springdatajpa
 
   datasource:
-    url: jdbc:mysql://localhost:3306/jpadb
-    username: chill
-    password: chill
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mariadb://localhost:3306/jpadb
+    username: jiyun
+    password: 1010
+    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
