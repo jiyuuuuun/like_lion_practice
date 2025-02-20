@@ -1,4 +1,4 @@
-package com.example.springdatajpa;
+package com.example.springdatajpa2;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -18,7 +18,7 @@ public class Application {
     }
     @Bean
 //  @Transactional
-    public CommandLineRunner run(CustomerRepository repository,CustomerService service){
+    public CommandLineRunner run(CustomerRepository repository, CustomerService service){
         return args -> {
 //          repository.findAll().forEach(customer -> log.info(customer.getName()));
 //            Customer customer = repository.findById(1L).get();  //이때 트랜잭션이 종료됨.
@@ -68,6 +68,6 @@ public class Application {
             Pageable pageable = PageRequest.of(0,3);
             repository.findByEmailContaining("exam",pageable)
                     .forEach(customer -> log.info("페이징 처리된 customer :: {},{}",customer.getName(),customer.getEmail()));
-        };
+            };
     }
 }

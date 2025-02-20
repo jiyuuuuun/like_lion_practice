@@ -1,12 +1,11 @@
-package com.example.springdatajpa;
+package com.example.springdatajpa2;
 
+import com.example.springdatajpa.User;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
-import java.util.Objects;
 
 public interface CustomerRepository extends JpaRepository<Customer,Long> {
     //이름으로 조회

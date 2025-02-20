@@ -1,4 +1,4 @@
-package com.example.springdatajpa;
+package com.example.springdatajpa2;
 
 import jakarta.persistence.*;
 import lombok.Getter;
