@@ -1,5 +1,6 @@
 package com.example.springdatajpa;
 
+import com.example.springdatajpa2.Customer;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
