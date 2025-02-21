@@ -1,0 +1,86 @@
+GET http://localhost:8080/hello
+Accept: application/json
+
+### 메모 1 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+첫 번째 메모입니다.
+
+###
+
+### 메모 2 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+두 번째 메모! 오늘 날씨 좋다.
+
+###
+
+### 메모 3 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+세 번째 메모: IntelliJ HTTP Client 사용해보자.
+
+###
+
+### 메모 4 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+네 번째 메모: Java Spring Boot REST API 연습 중.
+
+###
+
+### 메모 5 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+다섯 번째 메모: 점심 뭐 먹지?
+
+###
+
+### 메모 6 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+여섯 번째 메모: 오늘 할 일 - 1. 코드 작성 2. 회의 3. 운동
+
+###
+
+### 메모 7 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+일곱 번째 메모: 새로운 기능 추가 예정.
+
+###
+
+### 메모 8 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+여덟 번째 메모: HTTP 요청 자동화 테스트 중!
+
+###
+
+### 메모 9 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+아홉 번째 메모: API 개발 재미있다!
+
+###
+
+### 메모 10 생성
+POST http://localhost:8080/api/memos
+Content-Type: text/plain
+
+열 번째 메모: 벌써 10개나 만들었네~
+
+###
+
+### 모든 메모 가져오기 (GET)
+GET http://localhost:8080/api/memos
+Accept: application/json
