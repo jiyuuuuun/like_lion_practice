@@ -26,14 +26,14 @@ public class ExampleController {
     }
 
 
-    @GetMapping("/users/{id}")
-    public ResponseEntity<User> user(@PathVariable("id") Long id) {
-        User user = userService.findById(id);
-        if(user==null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(user);
-
-    }
+//    @GetMapping("/users/{id}")
+//    public ResponseEntity<User> user(@PathVariable("id") Long id) {
+//        User user = userService.findById(id);
+//        if(user==null) {
+//            return ResponseEntity.notFound().build();
+//        }
+//        return ResponseEntity.ok(user);
+//
+//    }
 
 }
