@@ -19,6 +19,7 @@ public class TodoService {
     public List<Todo> getTodoList(){
         return todoRepository.findAll();
     }
+
     @Transactional
     public void addTodoList(Todo todo){
         if(todo==null){
@@ -31,12 +32,16 @@ public class TodoService {
     public Todo getTodo(Long id){
         return todoRepository.findById(id).orElseThrow();
     }
+
     @Transactional
     public void deleteTodo(Todo todo){
         if(todo == null)
             throw new NullPointerException();
+        if(todoRepository.existsById(todo.getId()))
+            throw new RuntimeException("id에 해당하는 todo가 없어요");
         todoRepository.delete(todo);
     }
+
     @Transactional
     public void updateDone(Todo todo){
         todoRepository.save(todo);
