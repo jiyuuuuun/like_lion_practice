@@ -32,11 +32,12 @@ function updateTodo(id){
 function deleteTodo(id){
     let delTodo = {"id": id};
     let xhr = new XMLHttpRequest();
-    xhr.open('DELETE','http://localhost:8080/api/todos');
+//    xhr.open('DELETE','http://localhost:8080/api/todos');
+    xhr.open('DELETE','http://localhost:8080/api/todos/' +id);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xhr.send(JSON.stringify(delTodo));
+//    xhr.send(JSON.stringify(delTodo));
+    xhr.send(JSON.stringify());
 }
-
 function postTodo(todo){
     let xhr = new XMLHttpRequest();
     xhr.open('post','http://localhost:8080/api/todos');
