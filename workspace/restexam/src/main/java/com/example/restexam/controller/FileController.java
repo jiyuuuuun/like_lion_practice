@@ -5,10 +5,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StreamUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileOutputStream;
@@ -38,8 +35,8 @@ public class FileController {
 
     //파일 업로드
     @PostMapping("/upload")
-    public ResponseEntity<String> upload(@RequestParam(name = "file") MultipartFile file
-//                                         @RequestParam(name = "info",required = false)UploadInfo uploadInfo
+    public ResponseEntity<String> upload(@RequestParam(name = "file") MultipartFile file,
+                                         @RequestPart(name = "info",required = false)UploadInfo uploadInfo //나머지 정보를 담음
                                         ) {
         log.info(file.getContentType());
         log.info(file.getOriginalFilename());
