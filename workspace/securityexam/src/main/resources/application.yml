@@ -2,6 +2,12 @@ spring:
   application:
     name: restexam
 
+  security:
+    user:
+      name: jiyun
+      password: 1234
+
+
   servlet:
     multipart:
       max-file-size: 2MB
@@ -19,3 +25,13 @@ spring:
     properties:
       hibernate:
         format_sql: true
+server:
+  tomcat:
+    max-threads: 2 #동시에 요청 할 수 있는 최대 수
+    min-spare-threads: 2 #항상 유지할 최소 스레드 수
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
