@@ -21,9 +21,9 @@ public class JiyunFilter implements Filter {
     }
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        log.info("📌JiyunFilter doFilter() 실행 전");
+        log.info("📌JiyunFilter doFilter() 실행 전"+Thread.currentThread().getName());
         filterChain.doFilter(servletRequest, servletResponse); //수행하고 다음으로 넘김
-        log.info("📌JiyunFilter doFilter() 실행 후");
+        log.info("📌JiyunFilter doFilter() 실행 후"+Thread.currentThread().getName());
     }
     @Override
     public void destroy() {
