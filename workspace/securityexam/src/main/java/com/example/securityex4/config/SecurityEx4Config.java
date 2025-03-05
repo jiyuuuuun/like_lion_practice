@@ -36,6 +36,11 @@ public class SecurityEx4Config {
                 .logout(logout -> logout
                         .logoutUrl("/logout")
                         .logoutSuccessUrl("/"))
+                .sessionManagement(session->session
+                        .maximumSessions(1)//동시 접속 허용 갯수
+                        .maxSessionsPreventsLogin(false) //디폴트 false 먼저 로그인한 사용자가 차단 됨
+                )
+
                 .userDetailsService(customUserDetailService);
 
         return http.build();
