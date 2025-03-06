@@ -21,7 +21,7 @@ public class JwtTokenizer {
     public static final Long ACCESS_TOKEN_EXPIRES_COUNT = 30*60*1000L; //유지시간 30분
     public static final Long REFRESH_TOKEN_EXPIRES_COUNT =7*24*60*60*1000L; //유지시간 7일
 
-    public JwtTokenizer(@Value("${jwt.secretKey") String accessSecret, @Value("${jwt.refreshKey") String refreshSecret) {
+    public JwtTokenizer(@Value("${jwt.secretKey}") String accessSecret, @Value("${jwt.refreshKey}") String refreshSecret) {
         this.accessSecret = accessSecret.getBytes(StandardCharsets.UTF_8);
         this.refreshSecret = refreshSecret.getBytes(StandardCharsets.UTF_8);
     }
@@ -53,5 +53,36 @@ public class JwtTokenizer {
     }
     public String createRefreshToken(Long id, String email, String name, String username, List<String> role){
         return createToken(id,email,name,username,role,REFRESH_TOKEN_EXPIRES_COUNT,refreshSecret);
+    }
+    private Claims parseToken(String token ,byte[] secretKey) {
+        return Jwts.parserBuilder()
+                .setSigningKey(secretKey)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+    }
+    public Claims parseAccessToken(String token) {
+        return parseToken(token, accessSecret);
+    }
+    public Claims parseRefreshToken(String token) {
+        return parseToken(token, refreshSecret);
+    }
+    public Long getUserIdFromToken(String token) {
+        if(token == null || token.isBlank()){
+            throw new IllegalArgumentException("token is null or Blank");
+        }
+        if(token.startsWith("Bearer")){
+            throw new IllegalArgumentException("Bearer token should start with 'Bearer'");
+        }
+        Claims claims =parseToken(token,accessSecret);
+        if(claims == null){
+            throw new IllegalArgumentException("token is null or Blank");
+        }
+        Object userId = claims.get("userId");
+        if(userId instanceof Number){
+            return ((Number)userId).longValue();
+        }else{
+            throw new IllegalArgumentException("userId is not a number");
+        }
     }
 }
