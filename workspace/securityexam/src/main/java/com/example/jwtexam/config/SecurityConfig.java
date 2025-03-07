@@ -1,5 +1,6 @@
 package com.example.jwtexam.config;
 
+import com.example.jwtexam.jwt.exception.CustomAuthenticationEntryPoint;
 import com.example.jwtexam.jwt.filter.JwtAuthenticationFilter;
 import com.example.jwtexam.jwt.util.JwtTokenizer;
 import lombok.RequiredArgsConstructor;
